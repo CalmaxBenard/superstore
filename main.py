@@ -167,6 +167,6 @@ with st.expander("View Data"):
     st.write(filtered_df.iloc[:500, 1:20:2])
 
 # download original dataset
-st.write("Download Dataset used in the Project in here :point_down:")
-csv = df.to_csv(index=False).encode("utf-8")
-st.download_button("Download Data", data=csv, file_name="Data.csv", mime="txt/csv")
+with st.expander("Download Dataset used in the Project in here :point_down:"):
+    csv = df.to_csv(index=False).encode("utf-8")
+    st.download_button("Download Data", data=csv, file_name="Data.csv", mime="txt/csv")
