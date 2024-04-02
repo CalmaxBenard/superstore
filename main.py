@@ -14,7 +14,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title(" :bar_chart: Sample SuperStore EDA")
+st.title(" :bar_chart: Apex SuperStore EDA")
 
 st.markdown("<style>div.block-container{padding-top:1rem}</style>", unsafe_allow_html=True)
 
