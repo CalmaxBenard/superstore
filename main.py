@@ -121,7 +121,7 @@ with st.expander("View Time-Series Data"):
     st.write(time_df)
 
 # A tree map based on region, category, sub-category
-st.subheader("Hierarchical View od Sales")
+st.subheader("Hierarchical View of Sales")
 fig3 = px.treemap(filtered_df, path=["Region", "Category", "Sub-Category"], values="Sales",
                   hover_data=["Sales"], color="Sub-Category")
 st.plotly_chart(fig3, use_container_width=True)
